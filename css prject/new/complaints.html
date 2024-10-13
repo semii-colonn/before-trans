@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captain X - complaints</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="container">
+            <nav>
+                <div class="logo">
+                    <img src="../imgs/Captain X 2022 copy.png" alt="Captain X Logo">
+                </div>
+                <div class="navigation">
+                    <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+                    <a class="nav-link" href="broker.html"><i class="fas fa-chart-line"></i> Broker</a>
+                    <a class="nav-link" href="complaints.html"><i class="fas fa-comments"></i> Complaints</a>
+                    <a class="nav-link" href="#"><i class="fas fa-globe"></i> Language</a>
+                </div>
+                <button class="auth-popup-btn" id="authBtn"><i class="fas fa-user"></i> Login to community</button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="content-section">
+        <!-- عمود الشكاوي -->
+        <div class="left-column">
+            <h1 class="section-title">Submit Your Complaint</h1>
+            <form action="#" class="complaint-form">
+                <div class="form-group-wrapper">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="whatsapp">WhatsApp Number:</label>
+                        <input type="tel" id="whatsapp" name="whatsapp" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="account-number">Account Number:</label>
+                        <input type="text" id="account-number" name="account-number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company-name">Company Name:</label>
+                        <input type="text" id="company-name" name="company-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company-website">Company Website Link:</label>
+                        <input type="url" id="company-website" name="company-website">
+                    </div>
+                    <div class="form-group">
+                        <label for="total-profits">Total Profits:</label>
+                        <input type="number" id="total-profits" name="total-profits" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="total-deposit">Total Deposit:</label>
+                        <input type="number" id="total-deposit" name="total-deposit" required>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn">Send Complaint</button>
+            </form>
+        </div>
+
+        <!-- عمود التفاصيل الشخصية -->
+        <div class="right-column">
+            <h2>About Complains and Licenes</h2>
+            <p>When dealing with fraudulent trading companies, the process of filing a complaint and recovering lost
+                funds can be complex, but it is essential to take the right steps to protect your rights. Complaints are
+                usually directed at companies operating without proper licenses or in violation of regulations, making
+                it crucial to understand how to deal with it correctly</p><br>
+            <h3>IMPORTANT NOTES:</h3>
+            <ul>
+                <li>1-Your personal information will only be accessed by Mohamed Ali to ensure your privacy.</li>
+                <li>2-The compensation timeline depends on various factors, ranging from 15 days to a year, depending on
+                    the licenses we are dealing with.</li>
+                <li>3-Mohamed Ali receives 15%, with no commission required before filing the complaint.</li>
+                <li>4-For more details, please refer to the video: <a
+                        href="https://youtu.be/azZ6KSL4qQk?si=jPj6YOSLxIqrouvv"
+                        target="_blank">https://youtu.be/azZ6KSL4qQk?si=jPj6YOSLxIqrouvv</a>.</li>
+            </ul>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Captain X. All rights reserved.</p>
+        <p>Empowering traders with knowledge and tools to navigate the financial markets successfully.</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/Captain7Forex?mibextid=ZbWKwL" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.tiktok.com/@captain.x06?_t=8qIR0DQtPK4&_r=1" target="_blank" aria-label="TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://www.instagram.com/captain.x06?igsh=MzJmNW5ueWcwZm5o" target="_blank"
+                aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://youtube.com/@captain-x?si=ARffLNuI1rI1DhIf" target="_blank" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </footer>
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup">
+            <span class="close" id="closePopup">&times;</span>
+            <h3>Login</h3>
+            <form id="authForm">
+                <input type="text" placeholder="Username" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <input type="text" placeholder="Enter OTP" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const authBtn = document.getElementById('authBtn');
+            const popupOverlay = document.getElementById('popupOverlay');
+            const closePopup = document.getElementById('closePopup');
+            const authForm = document.getElementById('authForm');
+
+            authBtn.addEventListener('click', function () {
+                popupOverlay.style.display = 'block';
+            });
+
+            closePopup.addEventListener('click', function () {
+                popupOverlay.style.display = 'none';
+            });
+
+            popupOverlay.addEventListener('click', function (event) {
+                if (event.target === popupOverlay) {
+                    popupOverlay.style.display = 'none';
+                }
+            });
+
+            authForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+                alert('Form submitted!'); // هنا يمكنك إضافة المعالجة المطلوبة
+            });
+        });
+
+        let lastScrollTop = 0; // لتخزين موقع التمرير الأخير
+
+        window.addEventListener('scroll', function () {
+            const nav = document.querySelector('nav');
+            const currentScroll = window.pageYOffset || document.documentElement.scrollTop; // الحصول على موقع التمرير الحالي
+
+            if (currentScroll > lastScrollTop) {
+                // إذا كان التمرير للأسفل
+                nav.style.top = '-80px'; // قم بإخفاء شريط التنقل
+            } else {
+                // إذا كان التمرير للأعلى
+                nav.style.top = '0'; // أظهر شريط التنقل
+            }
+            lastScrollTop = currentScroll; // تحديث موقع التمرير الأخير
+        });
+    </script>
+</body>
+
+</html>
